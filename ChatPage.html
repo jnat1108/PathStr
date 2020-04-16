@@ -41,6 +41,13 @@
 		embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 		embedded_svc.settings.offlineSupportMinimizedText = 'Contact Pathstream';
 		embedded_svc.settings.prechatBackgroundImgURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUqA9h5pfWyG27iv76tlpuARSoWW6owL0QR8znH0f0sc3OS0mT&usqp=CAU';
+		
+		embedded_svc.settings.prepopulatedPrechatFields = {
+		    FirstName: “John”,
+		    LastName: “Doe”,
+		    Email: “john.doe@salesforce.com”,
+		    Subject: “Hello”
+		};
 
 		embedded_svc.init(
 			'https://fps-pathstream--uat.my.salesforce.com',
