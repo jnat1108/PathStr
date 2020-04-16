@@ -7,7 +7,6 @@
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #039BE8;
 		font-family: "Arial", sans-serif;
-		//max-width:fit-content;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #039BE8;
@@ -20,10 +19,8 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = 'Chat with an Expert'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-		embedded_svc.settings.offlineSupportMinimizedText = 'Contact Pathstream';
-		embedded_svc.settings.prechatBackgroundImgURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUqA9h5pfWyG27iv76tlpuARSoWW6owL0QR8znH0f0sc3OS0mT&usqp=CAU';
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -39,6 +36,11 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
+		
+		embedded_svc.settings.defaultMinimizedText = 'Chat with an Expert'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+		embedded_svc.settings.offlineSupportMinimizedText = 'Contact Pathstream';
+		embedded_svc.settings.prechatBackgroundImgURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUqA9h5pfWyG27iv76tlpuARSoWW6owL0QR8znH0f0sc3OS0mT&usqp=CAU';
 
 		embedded_svc.init(
 			'https://fps-pathstream--uat.my.salesforce.com',
@@ -67,5 +69,6 @@
 	} else {
 		initESW('https://service.force.com');
 	}
-</script> 
+</script>
+	
 </html>
