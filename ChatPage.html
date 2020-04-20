@@ -6,7 +6,7 @@
 		<meta http-equiv="Expires" content="0" />
 	</head>
 	<body>
-		Chat Page 3.3
+		Chat Page 3.4
 	</body>
 	<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -56,6 +56,22 @@
 		  "label": "Email",
 		  "value": "john.doe@salesforce.com",
 		  "displayToAgent": true
+		}];
+		embedded_svc.settings.extraPrechatInfo = [{
+		  "entityFieldMaps": [{
+		    "doCreate": false,
+		    "doFind": true,
+		    "fieldName": "LastName",
+		    "isExactMatch": true,
+		    "label": "Last Name"
+		  }, {
+		    "doCreate": false,
+		    "doFind": true,
+		    "fieldName": "Email",
+		    "isExactMatch": true,
+		    "label": "Email"
+		  }],
+		  "entityName": "Contact"
 		}];
 
 		
