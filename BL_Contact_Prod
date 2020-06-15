@@ -34,7 +34,7 @@
 
 Message:<textarea  id="00N1I00000NfbRk" name="00N1I00000NfbRk" rows="3" type="text" wrap="soft" required="true"></textarea><br>
 
-<input type="submit" name="submit" oncomplete="alert("We will get back to you shortly")">
+<input type="submit" name="submit" oncomplete="alert('We will get back to you shortly')">
 
 </form>
 
