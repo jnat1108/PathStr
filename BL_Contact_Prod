@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00D1I000003HR3N">
+<input type=hidden name="retURL" value="https://baroquelifestyle.com/">
+<input  id="00N1I00000NfbRp" maxlength="40" name="00N1I00000NfbRp" size="20" type="hidden" required="true" value="Baroque Lifestyle" />
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="salesforce@baroquetravel.com">                                   -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true" /><br>
+
+Message:<textarea  id="00N1I00000NfbRk" name="00N1I00000NfbRk" rows="3" type="text" wrap="soft" required="true"></textarea><br>
+
+<input type="submit" name="submit" oncomplete="alert("We will get back to you shortly")">
+
+</form>
+
+    </body>
+</html>
