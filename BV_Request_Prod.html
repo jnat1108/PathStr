@@ -4,7 +4,7 @@
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
 <!--  ----------------------------------------------------------------------  -->
-v4
+v5
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
 <!--  ----------------------------------------------------------------------  -->
@@ -51,7 +51,7 @@ Additional Comments:<textarea  id="00N1I00000NfbRk" name="00N1I00000NfbRk" rows=
       try{
       var d = new Date(document.getElementById('cIn').value);
       var dString = '';
-      dString = d.getMonth() + "/" + d.getDay() + "/" + d.getYear();
+      dString = d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
       document.getElementById('cIn').value = dString;
       }catch(ex){}
     }
