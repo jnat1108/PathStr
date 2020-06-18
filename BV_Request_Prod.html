@@ -4,7 +4,7 @@
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
 <!--  ----------------------------------------------------------------------  -->
-v2
+v3
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
 <!--  ----------------------------------------------------------------------  -->
@@ -48,10 +48,12 @@ Additional Comments:<textarea  id="00N1I00000NfbRk" name="00N1I00000NfbRk" rows=
 </form>
   <script>
     function cInChanged(){
+      try{
       var d = new Date(document.getElementById('cIn').value);
       var dString = '';
       dString = d.getMonth() + "/" + d.getDay() + "/" + d.getYear();
       document.getElementById('cIn').value = dString;
+      }catch(Exception ex){}
     }
   </script>
 </html></body>
